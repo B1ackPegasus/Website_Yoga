@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+.app,
+body,
+#root{
+    height: 100%;
+    width: 100%;
+    font-family: 'Black Ops One', "sans-serif";
+    @apply text-main-color
+}
+html{
+    height:100vh;
+}
+
+.div-for-trans{
+  transform: translateX(300px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.div-for-trans.menuStart{
+    transform: unset;
+    opacity: 1;
+}
+
+
+
